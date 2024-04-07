@@ -19,6 +19,7 @@ function MealItemForm(props) {
       return;
     }
     props.onAddToCart(+inputAmount);
+    amountInputRef.current.value = "1";
   };
   return (
     <form onSubmit={submitHandler} className={styles.form}>
